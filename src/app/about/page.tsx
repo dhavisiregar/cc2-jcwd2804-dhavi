@@ -1,7 +1,7 @@
 import Navbar from "@/components/homePage/navbar";
 import CompanyHistory from "@/components/aboutUsPage/companyHistory";
-import Team from "@/components/aboutUsPage/team";
 import Culture from "@/components/aboutUsPage/culture";
+import Teams from "@/components/aboutUsPage/teams";
 import React from "react";
 
 const page = () => {
@@ -14,7 +14,7 @@ const page = () => {
         <CompanyHistory />
       </div>
       <div>
-        <Team />
+        <Teams />
       </div>
       <div>
         <Culture />

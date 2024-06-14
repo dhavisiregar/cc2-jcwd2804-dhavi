@@ -2,12 +2,12 @@ import React from "react";
 
 const products = () => {
   return (
-    <section className="bg-black p-20">
-      <h2 className="text-7xl font-bold text-center p-0 text-red-700">
+    <section className="bg-gray-300 p-32">
+      <h2 className="text-7xl font-bold text-center p-0 text-black">
         Products
       </h2>
       <div className="flex flex-wrap mt-2 justify-center ">
-        <div className="w-72 p-5 m-5 bg-red-700 text-black text-center rounded-lg">
+        <div className="w-72 p-5 m-5 bg-black flex flex-col items-center text-gray-300 text-center rounded-lg">
           <img
             src="https://pbs.twimg.com/media/GJhkZKWXkAAvpvo.jpg:large"
             alt="mammoth"
@@ -21,13 +21,13 @@ const products = () => {
             long years with their fourth full-length Cosmic Crypt, a non-stop,
             meteoric force of aggression and mayhem.
           </p>
-          <button className="mt-2 mb-2 bg-black text-red-700 rounded-md p-2 hover:bg-gray-500">
-            $20.00 USD
+          <button className="mt-2 mb-2 bg-red-700 text-white rounded-md p-2 hover:bg-red-800">
+            $35.00
           </button>
         </div>
-        <div className="w-72 p-5 m-5 bg-red-700 text-black text-center rounded-lg">
+        <div className="w-72 p-5 m-5 bg-black flex flex-col items-center text-gray-300 text-center rounded-lg">
           <img
-            src="https://cdn.store-assets.com/s/174181/i/73689760.jpg"
+            src="/images/gatecreeper-1.png"
             alt="gatecreeper"
             className="rounded-[20%] w-4/5"
           />
@@ -40,15 +40,15 @@ const products = () => {
             the album. The record is a direct result of Gatecreeper's
             experience, musical refinement, and commitment to death metal.
           </p>
-          <button className="mt-2 mb-2 bg-black text-red-700 rounded-md p-2 hover:bg-gray-500">
-            $40.00 USD
+          <button className="mt-2 mb-2 bg-red-700 text-white rounded-md p-2 hover:bg-red-800">
+            $39.99
           </button>
         </div>
-        <div className="w-72 p-5 m-5 bg-red-700 text-black text-center rounded-lg">
+        <div className="w-72 p-5 m-5 bg-black flex flex-col items-center text-gray-300 text-center rounded-lg">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4tWuPWTHVIZNn_EAfQtPJ6RQoafTTNJrrQ&s"
+            src="/images/agri-1.png"
             alt="agriculture"
-            className="rounded-[20%] w-4/5"
+            className="rounded-[20%] w-10/12"
           />
           <h3 className="mt-4 mb-2 font-bold">Agriculture "Agriculture" LP</h3>
           <p className="mt-2 mb-2">
@@ -58,14 +58,14 @@ const products = () => {
             jubilation which impacts us emotionally and in a metaphysical,
             arguably spiritual sense too.
           </p>
-          <button className="mt-2 mb-2 bg-black text-red-700 rounded-md p-2 hover:bg-gray-500">
-            $30.00 USD
+          <button className="mt-2 mb-2 bg-red-700 text-white rounded-md p-2 hover:bg-red-800">
+            $29.99
           </button>
         </div>
-        <div className="w-72 p-5 m-5 bg-red-700 text-black text-center rounded-lg">
+        <div className="w-72 p-5 m-5 bg-black flex flex-col items-center text-gray-300 text-center rounded-lg">
           <img
             src="https://images.tokopedia.net/img/cache/700/VqbcmM/2023/2/17/c1e0b638-6468-47b7-ac73-e3b10f82cecd.jpg"
-            alt="body-void"
+            alt="avhath"
             className="rounded-[20%] w-4/5"
           />
           <h3 className="mt-4 mb-2 font-bold">
@@ -77,14 +77,14 @@ const products = () => {
             featuring an award-winning single FELO DE SE and the furious
             HALLOWED GROUND, both produced by Alyuadi Febryansyah.
           </p>
-          <button className="mt-2 mb-2 bg-black text-red-700 rounded-md p-2 hover:bg-gray-500">
-            $35.00 USD
+          <button className="mt-2 mb-2 bg-red-700 text-white rounded-md p-2 hover:bg-red-800">
+            $19.99
           </button>
         </div>
-        <div className="w-72 p-5 m-5 bg-red-700 text-black text-center rounded-lg">
+        <div className="w-72 p-5 m-5 bg-black flex flex-col items-center text-gray-300 text-center rounded-lg">
           <img
-            src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/5/17/f45ef5d3-4265-4142-b8eb-7ad453a67485.jpg"
-            alt="seasalt"
+            src="https://shop.revolvermag.com/cdn/shop/files/image_2440486e-55ab-4244-9763-96a23e3de670_600x.png?v=1690312591"
+            alt="deafheaven"
             className="rounded-[20%] w-4/5"
           />
           <h3 className="mt-4 mb-2 font-bold">Deafheaven "Sunbather" LP</h3>
@@ -94,8 +94,8 @@ const products = () => {
             shoegaze, juxtaposed with opaque screaming, breakdowns and overall
             song structures typically found on black metal recordings.
           </p>
-          <button className="mt-2 mb-2 bg-black text-red-700 rounded-md p-2 hover:bg-gray-500">
-            $55.00 USD
+          <button className="mt-2 mb-2 bg-red-700 text-white rounded-md p-2 hover:bg-red-800">
+            $54.99
           </button>
         </div>
       </div>

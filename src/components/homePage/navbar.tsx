@@ -1,15 +1,24 @@
+"use client";
+import { useRouter } from "next/navigation";
+
 const Navbar = () => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push("/home");
+  };
+
   return (
-    <div className="fixed w-screen bg-red-700 text-black shadow-md sm:grid-cols-2">
-      <div className="container flex justify-between px-10 py-4 sm:py-3">
+    <div className="fixed w-screen z-20 bg-gray-200 text-black shadow-md sm:grid-cols-2">
+      <div className="container flex justify-between items-center py-2 px-10">
         {/* logo section */}
         <div className="font-bold text-4xl">
-          <a
-            href="/home"
-            className="inline-block hover:text-red-600 font-semibold"
-          >
-            Helvete
-          </a>
+          <img
+            onClick={handleClick}
+            src="/images/logo-2.png"
+            alt=""
+            className="w-32 cursor-pointer"
+          />
         </div>
 
         {/* navlinks section */}
@@ -18,7 +27,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/home"
-                className="inline-block hover:text-red-600 text-xl font-semibold"
+                className="inline-block hover:text-red-700 text-xl font-semibold"
               >
                 Home
               </a>
@@ -26,7 +35,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/about"
-                className="inline-block hover:text-red-600 text-xl font-semibold"
+                className="inline-block hover:text-red-700 text-xl font-semibold"
               >
                 About Us
               </a>
@@ -34,7 +43,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/products"
-                className="inline-block hover:text-red-600 text-xl font-semibold"
+                className="inline-block hover:text-red-700 text-xl font-semibold"
               >
                 Products
               </a>
@@ -42,9 +51,9 @@ const Navbar = () => {
             <li>
               <a
                 href="/teams"
-                className="inline-block hover:text-red-600 text-xl font-semibold"
+                className="inline-block hover:text-red-700 text-xl font-semibold"
               >
-                Teams
+                Team
               </a>
             </li>
           </ul>
