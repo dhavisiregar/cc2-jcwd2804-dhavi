@@ -2,8 +2,9 @@ import React from "react";
 
 const hero = () => {
   return (
-    <div className="bg-gray-300 px-10">
-      <div className="container py-16 sm:py-0">
+    <div className="relative z-0 bg-[url('/images/catch.png')] px-10">
+      <div className="absolute inset-0 bg-gray-300 opacity-60 z-[-1]"></div>
+      <div className="container py-16 sm:py-0 relative z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-center min-h-[600px]">
           {/* text content section */}
           <div className="space-y-7 text-black">

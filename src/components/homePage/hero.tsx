@@ -2,7 +2,7 @@ import React from "react";
 
 const hero = () => {
   return (
-    <div className="relative z-[-1] bg-[url('/images/avhath.jpg')] px-10 mt-24">
+    <div className="relative z-[-1] bg-[url('/images/avhath.jpg')] px-10 mt-12 ">
       <div className="absolute inset-0 bg-gray-300 opacity-60 z-[-1]"></div>
       <div className="container py-16 sm:py-0 relative z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-center min-h-[600px] shadow-2xl">

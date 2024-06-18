@@ -2,8 +2,9 @@ import React from "react";
 
 const products = () => {
   return (
-    <section className="bg-gray-300 p-32">
-      <h2 className="text-7xl font-bold text-center p-0 text-black">
+    <section className="relative z-[-1] bg-[url('/images/catch.png')] p-32 mt-20">
+      <div className="absolute inset-0 bg-gray-300 opacity-60 z-[-1]"></div>
+      <h2 className="text-7xl font-bold text-center p-0  text-black">
         Products
       </h2>
       <div className="flex flex-wrap mt-2 justify-center ">
@@ -11,7 +12,7 @@ const products = () => {
           <img
             src="https://pbs.twimg.com/media/GJhkZKWXkAAvpvo.jpg:large"
             alt="mammoth"
-            className="rounded-[20%] w-4/5"
+            className="rounded-[20%] w-3/5"
           />
           <h3 className="mt-4 mb-2 font-bold">
             Mammoth Grinder <br /> "Cosmic Crypt" LP

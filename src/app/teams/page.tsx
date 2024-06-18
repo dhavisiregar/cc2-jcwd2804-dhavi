@@ -38,7 +38,7 @@ const page = () => {
       <h1 className="font-bold text-7xl text-black text-center pt-32">
         Our Team
       </h1>
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {users.map((user, index) => (
           <TeamMember
             key={index}

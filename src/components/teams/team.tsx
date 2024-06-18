@@ -14,7 +14,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
   picture,
 }) => {
   return (
-    <section className="py-12 bg-gray-300">
+    <section className="py-12 bg-gray-300 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3">
       <div className="max-w-sm rounded shadow-lg m-4">
         <img className="w-2/5 h-2/5" src={picture} alt={name} />
         <div className="px-6 py-4">

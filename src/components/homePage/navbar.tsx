@@ -9,15 +9,15 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-screen z-20 bg-gray-200 text-black shadow-md sm:grid-cols-2">
+    <div className="fixed w-screen z-20 bg-gray-200 text-black shadow-md sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       <div className="container flex justify-between items-center py-2 px-10">
         {/* logo section */}
         <div className="font-bold text-4xl">
           <img
             onClick={handleClick}
-            src="/images/logo-2.png"
+            src="/images/logo.png"
             alt=""
-            className="w-32 cursor-pointer"
+            className="w-3/5 cursor-pointer"
           />
         </div>
 
