@@ -34,11 +34,11 @@ const testimonials: Testimonial[] = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWrfjnJYNkJ0w6lXZfk_PYn65JjW_dna-lvg&s",
   },
   {
-    name: "Arifin Arian (Seringai)",
+    name: "Satan's Heir (Avhath)",
     feedback:
-      "I've been in the music industry for over a decade, and finding a reliable source for high-quality records and equipment is crucial. Helvete has consistently exceeded my expectations.",
+      "I've been in the music industry for a decade, and finding a reliable source for high-quality records and equipment is crucial. Helvete has consistently exceeded my expectations.",
     image:
-      "https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1489056773/cwrnbvbkailebeb47bkr.jpg",
+      "https://jeurnals.b-cdn.net/wp-content/uploads/2022/12/Paradise-x-AVHATH-Editorial-Landscape-16.jpg",
   },
   {
     name: "Chase H. Mason (Gatecreeper)",
@@ -56,7 +56,7 @@ const Testimonials: React.FC = () => {
         <h1 className="text-7xl text-black font-bold text-center mb-8">
           What Our Servants Say
         </h1>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-black p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">

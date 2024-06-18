@@ -16,7 +16,7 @@ interface User {
   };
 }
 
-const page = () => {
+const Page = () => {
   const [users, setUsers] = useState<User[]>([]);
 
   useEffect(() => {
@@ -31,14 +31,14 @@ const page = () => {
   }, []);
 
   return (
-    <div className="bg-gray-300">
+    <div className="bg-gray-300 min-h-screen">
       <div>
         <Navbar />
       </div>
-      <h1 className="font-bold text-7xl text-black text-center pt-32">
+      <h1 className="font-bold text-5xl md:text-7xl text-black text-center pt-32 md:pt-32">
         Our Team
       </h1>
-      <div className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
         {users.map((user, index) => (
           <TeamMember
             key={index}
@@ -53,4 +53,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

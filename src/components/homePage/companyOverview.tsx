@@ -5,7 +5,7 @@ const companyOverview = () => {
     <div className="relative bg-[url('/images/avhath.jpg')] px-10">
       <div className="absolute inset-0 bg-gray-300 opacity-60"></div>
       <div className="container py-16 sm:py-0 relative z-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-center min-h-[600px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 place-items-center min-h-[600px]">
           {/* text content section */}
           <div className="space-y-7 text-black order-2 sm:order-1">
             <h1 className="text-7xl text-center font-bold">Helvete</h1>
@@ -19,8 +19,8 @@ const companyOverview = () => {
             </p>
           </div>
 
-          {/* image section */}
-          <div className="relative">
+          {/* video section */}
+          <div className="relative w-full overflow-hidden pt-[56.25%]">
             <iframe
               width="560"
               height="315"
@@ -30,6 +30,7 @@ const companyOverview = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
+              className="absolute top-0 left-0 bottom-0 right-0 w-full h-full"
             ></iframe>
           </div>
         </div>

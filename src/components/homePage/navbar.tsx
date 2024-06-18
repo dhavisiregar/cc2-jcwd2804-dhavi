@@ -9,54 +9,46 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-screen z-20 bg-gray-200 text-black shadow-md sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-      <div className="container flex justify-between items-center py-2 px-10">
-        {/* logo section */}
-        <div className="font-bold text-4xl">
-          <img
-            onClick={handleClick}
-            src="/images/logo.png"
-            alt=""
-            className="w-3/5 cursor-pointer"
-          />
-        </div>
+    <div className="fixed top-0 left-0 right-0 z-20 bg-gray-200 text-black shadow-md">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center py-4">
+          {/* logo section */}
+          <div className="flex-shrink-0">
+            <img
+              onClick={handleClick}
+              src="/images/logo.png"
+              alt="logo"
+              className="w-3/5 cursor-pointer"
+            />
+          </div>
 
-        {/* navlinks section */}
-        <div>
-          <ul className="flex gap-10">
-            <li>
-              <a
-                href="/home"
-                className="inline-block hover:text-red-700 text-xl font-semibold"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="/about"
-                className="inline-block hover:text-red-700 text-xl font-semibold"
-              >
-                About Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="/products"
-                className="inline-block hover:text-red-700 text-xl font-semibold"
-              >
-                Products
-              </a>
-            </li>
-            <li>
-              <a
-                href="/teams"
-                className="inline-block hover:text-red-700 text-xl font-semibold"
-              >
-                Team
-              </a>
-            </li>
-          </ul>
+          {/* navlinks section */}
+          <nav className="md:flex md:space-x-6 sm:flex sm:space-x-3">
+            <a
+              href="/home"
+              className="text-xl font-semibold hover:text-red-700"
+            >
+              Home
+            </a>
+            <a
+              href="/about"
+              className="text-xl font-semibold hover:text-red-700"
+            >
+              About Us
+            </a>
+            <a
+              href="/products"
+              className="text-xl font-semibold hover:text-red-700"
+            >
+              Products
+            </a>
+            <a
+              href="/teams"
+              className="text-xl font-semibold hover:text-red-700"
+            >
+              Team
+            </a>
+          </nav>
         </div>
       </div>
     </div>
