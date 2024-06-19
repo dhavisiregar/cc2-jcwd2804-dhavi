@@ -1,11 +1,17 @@
 "use client";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const router = useRouter();
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
     router.push("/home");
+  };
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
@@ -22,8 +28,33 @@ const Navbar = () => {
             />
           </div>
 
+          {/* hamburger menu button */}
+          <div className="md:flex lg:hidden flex items-center">
+            <button
+              onClick={toggleMenu}
+              className="text-black focus:outline-none"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d={
+                    isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
+                  }
+                />
+              </svg>
+            </button>
+          </div>
+
           {/* navlinks section */}
-          <nav className="md:flex md:space-x-6 sm:flex sm:space-x-3">
+          <nav className="hidden lg:flex lg:space-x-6">
             <a
               href="/home"
               className="text-xl font-semibold hover:text-red-700"
@@ -51,6 +82,38 @@ const Navbar = () => {
           </nav>
         </div>
       </div>
+
+      {/* Mobile menu */}
+      {isOpen && (
+        <div className="md:flex lg:hidden bg-gray-200">
+          <nav className="flex flex-col space-y-2 px-4 py-2">
+            <a
+              href="/home"
+              className="text-lg font-semibold hover:text-red-700"
+            >
+              Home
+            </a>
+            <a
+              href="/about"
+              className="text-lg font-semibold hover:text-red-700"
+            >
+              About Us
+            </a>
+            <a
+              href="/products"
+              className="text-lg font-semibold hover:text-red-700"
+            >
+              Products
+            </a>
+            <a
+              href="/teams"
+              className="text-lg font-semibold hover:text-red-700"
+            >
+              Team
+            </a>
+          </nav>
+        </div>
+      )}
     </div>
   );
 };
