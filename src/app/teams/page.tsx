@@ -21,7 +21,7 @@ const Page = () => {
 
   useEffect(() => {
     axios
-      .get("https://randomuser.me/api/?results=10")
+      .get("https://randomuser.me/api/?results=30")
       .then((response) => {
         setUsers(response.data.results);
       })

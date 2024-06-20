@@ -65,7 +65,7 @@ const Navbar = () => {
               href="/about"
               className="text-xl font-semibold hover:text-red-700"
             >
-              About Us
+              About
             </a>
             <a
               href="/products"
