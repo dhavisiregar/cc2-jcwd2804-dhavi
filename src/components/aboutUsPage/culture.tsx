@@ -14,10 +14,10 @@ const Culture = () => {
             <p className="text-base sm:text-lg font-bold text-justify">
               At Helvete, we value creativity, intensity, and community. Every
               team member is deeply passionate about music, which drives the
-              company's mission and daily operations. Our knowledgeable team is
-              dedicated to providing exceptional customer service and engaging
-              with local metal scenes through events and workshops. We believe
-              that a vibrant, inclusive, and supportive culture is the
+              company&apos;s mission and daily operations. Our knowledgeable
+              team is dedicated to providing exceptional customer service and
+              engaging with local metal scenes through events and workshops. We
+              believe that a vibrant, inclusive, and supportive culture is the
               cornerstone of our success.
             </p>
           </div>

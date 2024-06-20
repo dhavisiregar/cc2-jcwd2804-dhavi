@@ -12,7 +12,7 @@ const Hero = () => {
               Products
             </h1>
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold">
-              We sell vinyl records from the world's bleakest bands!
+              We sell vinyl records from the world&apos;s bleakest bands!
             </h2>
           </div>
 

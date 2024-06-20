@@ -12,14 +12,15 @@ const CompanyHistory = () => {
               About Us
             </h1>
             <p className="text-justify font-bold text-sm sm:text-base lg:text-lg">
-              Mayhem guitarist Euronymous was "the central figure involved in
-              the formation of the Norwegian black metal scene", which he
-              "almost single-handedly founded". During May - June 1991, he
-              opened a record shop called Helvete. The shop was at Schweigaards
-              gate 56 in Oslo. Norwegian black metal musicians often met at the
-              shop and in its basement. They included the members of Mayhem, the
-              members of Emperor, Varg "Count Grishnackh" Vikernes of Burzum,
-              and Snorre "Blackthorn" Ruch of Thorns. Euronymous also founded an
+              Mayhem guitarist Euronymous was &quot;the central figure involved
+              in the formation of the Norwegian black metal scene&quot;, which
+              he &quot;almost single-handedly founded&quot;. During May - June
+              1991, he opened a record shop called Helvete. The shop was at
+              Schweigaards gate 56 in Oslo. Norwegian black metal musicians
+              often met at the shop and in its basement. They included the
+              members of Mayhem, the members of Emperor, Varg &quot;Count
+              Grishnackh&quot; Vikernes of Burzum, and Snorre
+              &quot;Blackthorn&quot; Ruch of Thorns. Euronymous also founded an
               independent record label called Deathlike Silence Productions,
               which was based at Helvete. It released albums by Norwegian bands
               Mayhem and Burzum, Swedish bands Merciless and Abruptum, and a
