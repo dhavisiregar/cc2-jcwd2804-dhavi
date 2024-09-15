@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
-    router.push("/home");
+    router.push("/");
   };
 
   const toggleMenu = () => {
@@ -56,12 +56,6 @@ const Navbar = () => {
           {/* navlinks section */}
           <nav className="hidden lg:flex lg:space-x-6">
             <a
-              href="/home"
-              className="text-xl font-semibold hover:text-red-700"
-            >
-              Home
-            </a>
-            <a
               href="/about"
               className="text-xl font-semibold hover:text-red-700"
             >
@@ -87,12 +81,6 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:flex lg:hidden bg-gray-200">
           <nav className="flex flex-col space-y-2 px-4 py-2">
-            <a
-              href="/home"
-              className="text-lg font-semibold hover:text-red-700"
-            >
-              Home
-            </a>
             <a
               href="/about"
               className="text-lg font-semibold hover:text-red-700"
